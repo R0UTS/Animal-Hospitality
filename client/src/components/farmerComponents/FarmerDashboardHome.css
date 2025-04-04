@@ -1,0 +1,44 @@
+/* FarmerDashboardHome.css */
+
+.farmer-dashboard-home {
+    padding: 20px;
+}
+
+.farmer-dashboard-home h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.farmer-dashboard-home .quick-actions {
+    margin-bottom: 30px;
+}
+
+.farmer-dashboard-home .quick-actions button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.farmer-dashboard-home .quick-actions button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.farmer-dashboard-home .recent-reports {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.farmer-dashboard-home .recent-reports h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Add more styles as needed for report summaries, etc. */

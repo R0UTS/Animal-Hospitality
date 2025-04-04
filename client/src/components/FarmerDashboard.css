@@ -1,0 +1,92 @@
+/* FarmerDashboard.css */
+
+.farmer-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    font-family: sans-serif;
+}
+
+/* Header */
+.farmer-dashboard-header {
+    background-color: #4CAF50; /* A green header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.farmer-dashboard-header .logo img {
+    max-height: 50px; /* Adjust logo size */
+}
+
+.farmer-dashboard-header .farmer-profile {
+    display: flex;
+    align-items: center;
+}
+
+.farmer-dashboard-header .farmer-profile span {
+    margin-right: 20px;
+}
+
+.farmer-dashboard-header .farmer-profile button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.farmer-dashboard-header .farmer-profile button:hover {
+    background-color: #f0f8ff; /* Lighter background on hover */
+}
+
+/* Sidebar/Navigation */
+.farmer-dashboard-sidebar {
+    background-color: #f8f8f8; /* Light gray sidebar */
+    padding: 20px;
+    width: 250px; /* Adjust sidebar width */
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.farmer-dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.farmer-dashboard-sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.farmer-dashboard-sidebar li:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+.farmer-dashboard-sidebar li.active {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Content Area */
+.farmer-dashboard-main-content {
+    flex: 1; /* Occupy remaining space */
+    padding: 20px;
+    background-color: #fff; /* White main content */
+}
+
+/* Footer */
+.farmer-dashboard-footer {
+    background-color: #333; /* Dark gray footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

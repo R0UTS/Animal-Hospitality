@@ -1,0 +1,24 @@
+/* FarmerMyReports.css */
+.farmer-my-reports {
+    padding: 20px;
+}
+
+.farmer-my-reports h2 {
+    margin-bottom: 20px;
+}
+
+.farmer-my-reports table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.farmer-my-reports th,
+.farmer-my-reports td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.farmer-my-reports th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,47 @@
+/* FarmerViewAnimals.css */
+.farmer-view-animals {
+    padding: 20px;
+}
+
+.farmer-view-animals h2 {
+    margin-bottom: 20px;
+}
+
+.farmer-view-animals table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.farmer-view-animals th,
+.farmer-view-animals td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.farmer-view-animals th {
+    background-color: #f2f2f2;
+}
+
+.farmer-view-animals .add-animal-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.farmer-view-animals .form-group {
+    margin-bottom: 15px;
+}
+
+.farmer-view-animals .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.farmer-view-animals .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
