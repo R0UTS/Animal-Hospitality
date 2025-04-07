@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.vet-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.vet-dashboard-header {
+    background-color: #2196F3; /* Blue header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 60px;
+}
+
+.welcome-message {
+    font-size: 1.2em;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-icon {
+    position: relative;
+}
+
+.notification-icon i {
+    font-size: 1.5em; /* Adjust icon size as needed */
+    color: white;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 0.7em;
+}
+
+.logout-button {
+    background-color: #f44336; /* Red color for logout button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Sidebar Styles */
+.vet-dashboard-sidebar {
+    background-color: #f8f8f8;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.vet-dashboard-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vet-dashboard-sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.vet-dashboard-sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.vet-dashboard-sidebar nav ul li a:hover,
+.vet-dashboard-sidebar nav ul li a.active {
+    background-color: #e0e0e0;
+}
+
+/* Main Content Styles */
+.vet-dashboard-main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px; /* Add spacing between components */
+}

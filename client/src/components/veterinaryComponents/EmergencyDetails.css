@@ -1,0 +1,41 @@
+/* Emergency Details Styles */
+.emergency-details {
+    flex: 1; /* Take up available space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.emergency-details h2 {
+    margin-top: 0;
+}
+
+.emergency-details .details-container {
+    margin-top: 10px;
+}
+
+.emergency-details p {
+    margin-bottom: 8px;
+}
+
+.emergency-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.emergency-actions button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.emergency-actions button:hover {
+    background-color: #0056b3;
+}

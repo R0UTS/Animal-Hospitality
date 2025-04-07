@@ -1,0 +1,34 @@
+/* Emergency List Styles */
+.emergency-list {
+    flex: 1; /* Take up available space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.emergency-table-container {
+    overflow-x: auto;
+}
+
+.emergency-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.emergency-table th,
+.emergency-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.emergency-table th {
+    background-color: #f2f2f2;
+}
+
+.emergency-table tbody tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

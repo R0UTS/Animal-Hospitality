@@ -8,6 +8,8 @@ import Dashboard from './components/Dashboard';
 import AdminPanel from './components/AdminPanel';
 import FarmerDashboard from './components/FarmerDashboard';
 import Navbar from './components/Navbar';
+import VeterinaryDashboard from './components/veterinaryComponents/VeterinaryDashboard';
+
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/farmer" element={<FarmerDashboard />} />
-        <Route path="/farmer" element={<FarmerDashboard />} />
+        <Route path="/veterianry" element={<VeterinaryDashboard/>} />
 
         {/* Add more routes as needed */}
       </Routes>

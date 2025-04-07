@@ -1,10 +1,15 @@
 /* FarmerDashboard.css */
 
 .farmer-dashboard-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     min-height: 100vh; /* Full viewport height */
     font-family: sans-serif;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer"
 }
 
 /* Header */
@@ -12,6 +17,7 @@
     background-color: #4CAF50; /* A green header */
     color: white;
     padding: 10px 20px;
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +57,7 @@
     padding: 20px;
     width: 250px; /* Adjust sidebar width */
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+    grid-area: sidebar;
 }
 
 .farmer-dashboard-sidebar ul {
@@ -78,9 +85,10 @@
 
 /* Main Content Area */
 .farmer-dashboard-main-content {
-    flex: 1; /* Occupy remaining space */
+     /* Occupy remaining space */
     padding: 20px;
-    background-color: #fff; /* White main content */
+    grid-area: main;
+    background-color:#f0f8ff; /* White main content */
 }
 
 /* Footer */
@@ -89,4 +97,5 @@
     color: white;
     text-align: center;
     padding: 10px;
+    grid-area: footer;
 }
