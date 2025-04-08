@@ -43,6 +43,10 @@
     margin-bottom: 30px;
   }
   
+  .report-emergency-button a{
+    text-decoration: none;
+    color: #f0f8ff;
+  }
   .report-emergency-button {
     background-color: #007bff; /* Blue button */
     color: white;

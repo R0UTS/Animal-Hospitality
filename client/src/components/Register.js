@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './RegisterPage.css'; // Import CSS for styling
+import Navbar from './Navbar';
 
 function RegisterPage() {
   const [role, setRole] = useState('farmer'); // Default role
@@ -65,7 +66,10 @@ function RegisterPage() {
   };
 
   return (
+    <div>
+      <Navbar />
     <div className="register-container">
+      
       <div className="register-form">
         <h2>Register for Animal Hospitality</h2>
         <form onSubmit={handleSubmit}>
@@ -160,7 +164,7 @@ function RegisterPage() {
           </button>
         </form>
       </div>
-    </div>
+    </div></div>
   );
 }
 

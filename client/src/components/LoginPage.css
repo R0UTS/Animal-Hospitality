@@ -83,3 +83,16 @@
     text-decoration: none;
     font-weight: bold;
   }
+  .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .forgot-password a {
+    color: #007bff; /* Or your theme's link color */
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }

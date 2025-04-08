@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './HomePage.css'; // Import CSS file for styling
 import logo from './animal-hospitality-logo.png'
 import heroImg from './cow.png'
 import reportImg from '../image/Easy Emergency Reporting logo.png'
+import Navbar from './Navbar';
 function HomePage() {
   return (
     <div className="home-page">
+      <Navbar />
       {/* Hero Section */}
       <header className="hero-section">
         <div className="logo">
@@ -15,7 +18,7 @@ function HomePage() {
         <div className="hero-content">
           <h1>Quickly Connect with Vets in Animal Emergencies</h1>
           <p>Animal Hospitality provides a platform for livestock owners to report health concerns and connect with qualified veterinarians for timely help.</p>
-          <button className="report-emergency-button">Report an Emergency</button>
+          <button className="report-emergency-button"><Link to="/login">Report an Emergency</Link></button>
         </div>
         <div className="hero-image">
           {/* Replace with your hero image */}

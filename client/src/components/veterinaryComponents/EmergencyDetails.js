@@ -10,8 +10,24 @@ function EmergencyDetails({ emergency, onUpdateStatus }) {
         onUpdateStatus(emergency.reportId, "Cancelled");
     };
 
-    const handleStatusChange = (e) => {
-        onUpdateStatus(emergency.reportId, e.target.value);
+    const renderStatusActions = (status) => {
+        switch (status) {
+            case "Pending":
+                return (
+                    <>
+                        <button onClick={handleAccept}>Accept</button>
+                        <button onClick={handleDecline}>Decline</button>
+                    </>
+                );
+            case "Acknowledged":
+                return <button onClick={() => onUpdateStatus(emergency.reportId, "En Route")}>Set to En Route</button>;
+            case "En Route":
+                return <button onClick={() => onUpdateStatus(emergency.reportId, "On-Site")}>Set to On-Site</button>;
+            case "On-Site":
+                return <button onClick={() => onUpdateStatus(emergency.reportId, "Resolved")}>Set to Resolved</button>;
+            default:
+                return null; // No actions for Cancelled or Resolved
+        }
     };
 
     return (
@@ -35,21 +51,7 @@ function EmergencyDetails({ emergency, onUpdateStatus }) {
                         <strong>Status:</strong> {emergency.status}
                     </p>
                     <div className="emergency-actions">
-                        {emergency.status === "Pending" && (
-                            <>
-                                <button onClick={handleAccept}>Accept</button>
-                                <button onClick={handleDecline}>Decline</button>
-                            </>
-                        )}
-                        {emergency.status !== "Pending" && (
-                            <select value={emergency.status} onChange={handleStatusChange}>
-                                <option value="Acknowledged">Acknowledged</option>
-                                <option value="En Route">En Route</option>
-                                <option value="On-Site">On-Site</option>
-                                <option value="Resolved">Resolved</option>
-                                <option value="Cancelled">Cancelled</option>
-                            </select>
-                        )}
+                        {renderStatusActions(emergency.status)}
                     </div>
                 </div>
             ) : (

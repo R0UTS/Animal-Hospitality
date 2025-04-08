@@ -14,7 +14,7 @@ function Navbar() {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/about">About</Link>
                 </li>
                 <li>
@@ -22,7 +22,7 @@ function Navbar() {
                 </li>
                 <li>
                     <Link to="/contact">Contact</Link>
-                </li>
+                </li> */}
                 {/* Add more links as needed (e.g., Login, Register) */}
                 <li>
                     <Link to="/login">Login</Link>
